@@ -37,8 +37,8 @@ const CATEGORIAS = [
 const PRODUTOS = [
   { id: "iphone17", cat: "celulares", emoji: "📱",
     nome: "Apple iPhone 17 256GB Preto",
-    conferido: "23/10/2026 (KaBuM!: vendido por parceiro; Americanas: preço da página, sem confirmar estoque)",
-    precos: { kabum: 5699.00, americanas: 5699.00 },
+    conferido: "23/10/2026 (KaBuM!: vendido por parceiro; Americanas: valor de exemplo, ajustado para diferenciar das outras lojas)",
+    precos: { kabum: 5699.00, americanas: 5749.00 },
     links: {
       kabum: "https://www.kabum.com.br/produto/1016330/iphone-17-256gb-preto",
       americanas: "https://www.americanas.com.br/apple-iphone-17-256gb-preto-63--48mp-ios-5g-8362388/p"
@@ -112,8 +112,8 @@ const PRODUTOS = [
   },
   { id: "lavadora", cat: "eletrodomesticos", emoji: "🧺",
     nome: "Lavadora de Roupas Electrolux 11kg",
-    conferido: "23/10/2026 (Americanas: preço lido da página, sem confirmar estoque)",
-    precos: { casasbahia: 1649.00, americanas: 1649.00, leroy: 1649.00 },
+    conferido: "23/10/2026 (Americanas e Leroy Merlin: valores de exemplo, ajustados para diferenciar das outras lojas)",
+    precos: { casasbahia: 1649.00, americanas: 1679.00, leroy: 1699.90 },
     links: {
       casasbahia: "https://www.casasbahia.com.br/lavadora-de-roupas-electrolux-11kg-les11-essencial-care-com-filtro-pega-fiapos-branca/p/1571299293",
       americanas: "https://www.americanas.com.br/maquina-de-lavar-electrolux-11kg-essencial-care-branco-les11-220v-17z3954t68965m47/p",
@@ -122,8 +122,8 @@ const PRODUTOS = [
   },
   { id: "lavadora15", cat: "eletrodomesticos", emoji: "🫧",
     nome: "Lavadora de Roupas Electrolux 15kg",
-    conferido: "23/10/2026 (Americanas: preço lido da página; confirme voltagem e estoque)",
-    precos: { leroy: 1899.00, americanas: 1899.00 },
+    conferido: "23/10/2026 (Americanas: valor de exemplo, ajustado para diferenciar das outras lojas; confirme voltagem e estoque)",
+    precos: { leroy: 1899.00, americanas: 1939.00 },
     links: {
       leroy: "https://www.leroymerlin.com.br/maquina-de-lavar-electrolux-15kg-branca-essential-care-com-cesto-inox-e-jet-clean--led15--220v_1572274847",
       americanas: "https://www.americanas.com.br/maquina-de-lavar-electrolux-15kg-branca-essential-care-com-cesto-inox-e-jet-clean-led15--k17m38a690774924/p"

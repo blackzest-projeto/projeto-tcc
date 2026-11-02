@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criar conta | Blackzest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="index.html"><img class="logo-img" src="imagens/logo.png" alt="">black<span>zest</span></a>
+    <nav aria-label="Principal">
+      <a href="index.html">Início</a>
+    </nav>
+  </header>
+
+  <main class="pagina estreita">
+    <h1>Criar conta</h1>
+    <p class="lead">Seus dados ficam salvos somente neste navegador.</p>
+
+    <form id="form-cadastro" class="form" novalidate>
+      <label for="nome">Nome</label>
+      <input id="nome" type="text" autocomplete="name">
+
+      <label for="email">E-mail</label>
+      <input id="email" type="email" autocomplete="email">
+
+      <label for="senha">Senha (mínimo de 6 caracteres)</label>
+      <input id="senha" type="password" autocomplete="new-password">
+
+      <label for="senha2">Confirmar senha</label>
+      <input id="senha2" type="password" autocomplete="new-password">
+
+      <p id="msg" class="msg" role="alert"></p>
+      <button type="submit" class="btn-principal">Criar conta</button>
+    </form>
+
+    <p class="alt">Já tem conta? <a href="login.html">Entrar</a></p>
+  </main>
+
+ <footer class="rodape">
+  <div class="rodape-in">
+    <div class="rodape-cols">
+      <div>
+        <h3>Destaques</h3>
+        <ul>
+          <li><a href="pesquisa.html?cat=celulares">Celulares</a></li>
+          <li><a href="pesquisa.html?q=notebook">Notebooks</a></li>
+          <li><a href="pesquisa.html?q=tv">TVs</a></li>
+          <li><a href="pesquisa.html?q=placa de video">Placas de vídeo</a></li>
+          <li><a href="pesquisa.html?q=geladeira">Geladeiras</a></li>
+          <li><a href="pesquisa.html">Todas as categorias</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Sobre a Blackzest</h3>
+        <ul>
+          <li><a href="ajuda.html#como-funciona">Como funciona</a></li>
+          <li><a href="ajuda.html#privacidade">Sua privacidade</a></li>
+          <li><a href="ajuda.html#termos">Termos de uso</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Precisa de ajuda?</h3>
+        <a class="btn-ajuda" href="ajuda.html#contato">Fale conosco</a>
+      </div>
+    </div>
+
+    <p class="rodape-msg">Compare preços nas principais lojas e encontre a melhor oferta antes de comprar.</p>
+
+    <div class="legal">
+      <p>© Blackzest. Projeto escolar. Todos os direitos reservados.</p>
+      <p>Os preços exibidos são exemplos e não representam ofertas reais.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="auth.js"></script>
+</body>
+</html>

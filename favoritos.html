@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meus favoritos | Blackzest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="index.html"><img class="logo-img" src="imagens/logo.png" alt="">black<span>zest</span></a>
+    <nav aria-label="Principal">
+      <a href="index.html">Início</a>
+    </nav>
+  </header>
+
+  <main class="pagina">
+    <h1>Meus favoritos</h1>
+    <div id="lista"></div>
+  </main>
+
+  <!-- Cole aqui o <footer> inteiro copiado do index.html --> <footer class="rodape">
+  <div class="rodape-in">
+    <div class="rodape-cols">
+      <div>
+        <h3>Destaques</h3>
+        <ul>
+          <li><a href="pesquisa.html?cat=eletronicos">Vídeo e áudio</a></li>
+          <li><a href="pesquisa.html?cat=celulares">Celulares</a></li>
+          <li><a href="pesquisa.html?cat=eletrodomesticos">Eletrodomésticos</a></li>
+          <li><a href="pesquisa.html?cat=pecas">Peças de computador</a></li>
+          <li><a href="pesquisa.html">Todas as categorias</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Sobre a Blackzest</h3>
+        <ul>
+          <li><a href="ajuda.html#como-funciona">Como funciona</a></li>
+          <li><a href="ajuda.html#privacidade">Sua privacidade</a></li>
+          <li><a href="ajuda.html#termos">Termos de uso</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Precisa de ajuda?</h3>
+        <a class="btn-ajuda" href="ajuda.html#contato">Fale conosco</a>
+      </div>
+    </div>
+
+    <p class="rodape-msg">Compare preços nas principais lojas e encontre a melhor oferta antes de comprar.</p>
+
+    <div class="legal">
+      <p>© Blackzest. Projeto escolar. Todos os direitos reservados.</p>
+      <p>Preços conferidos manualmente nas lojas na data indicada em cada produto.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="dados.js"></script>
+  <script src="favoritos.js"></script>
+  <script>
+    const area = $("lista");
+
+    if (!Favoritos.logado()) {
+      area.innerHTML = `<p class="vazio">Entre na sua conta para ver seus favoritos. <a href="login.html">Entrar</a> ou <a href="cadastro.html">criar conta</a>.</p>`;
+    } else {
+      const favoritos = Favoritos.lista()
+        .map(codigo => PRODUTOS.find(p => p.id === codigo))
+        .filter(Boolean);
+
+      if (!favoritos.length) {
+        area.innerHTML = `<p class="vazio">Você ainda não favoritou nenhum produto. <a href="pesquisa.html">Pesquisar produtos</a></p>`;
+      } else {
+        area.className = "grade-produtos";
+        area.innerHTML = favoritos.map(p => `
+          <a class="produto-card" href="produto.html?id=${p.id}">
+            ${foto(p)}
+            <div class="info"><b>${p.nome}</b><small>a partir de ${brl(menor(p))}</small></div>
+          </a>`
+        ).join("");
+      }
+    }
+  </script>
+  <script src="auth.js"></script>
+</body>
+</html>

@@ -63,5 +63,23 @@ const DESCRICOES = {
   echoshow5: "O Echo Show 5 de 3ª geração é um smart display com tela sensível ao toque de 5,5 polegadas e a assistente Alexa. Tem câmera de 2 MP com tampa integrada para mais privacidade, além de mostrar informações e fazer chamadas de vídeo.",
   tapoc200: "A TP-Link Tapo C200 é uma câmera de segurança Wi-Fi para ambientes internos, com giro de 360°, resolução Full HD e visão noturna. Conta com detecção de movimento, áudio de duas vias e compatibilidade com a Alexa.",
   smartplugpositivo: "O Smart Plug Positivo é uma tomada inteligente Wi-Fi de 10 A e até 1.000 W, que permite ligar e desligar aparelhos pelo celular. É compatível com a Alexa e requer rede Wi-Fi de 2,4 GHz.",
-  lampadapositivo: "A Smart Lâmpada Positivo é uma lâmpada Wi-Fi de LED, com 9 W, 806 lúmens e funcionamento bivolt. Oferece branco quente e frio e até 16 milhões de cores, com controle por aplicativo, Alexa e Google Assistente."
+  lampadapositivo: "A Smart Lâmpada Positivo é uma lâmpada Wi-Fi de LED, com 9 W, 806 lúmens e funcionamento bivolt. Oferece branco quente e frio e até 16 milhões de cores, com controle por aplicativo, Alexa e Google Assistente.",
+
+  // Games
+  ps5slim: "O PlayStation 5 Slim é a versão mais compacta do console da Sony, com leitor de disco e SSD de 1 TB. Acompanha o controle DualSense e roda jogos em resolução de até 4K.",
+  xboxseriess: "O Xbox Series S é o console compacto da Microsoft, com SSD de 512 GB e sem leitor de disco: os jogos são baixados pela loja digital. É compatível com o serviço Game Pass.",
+  switch2: "O Nintendo Switch 2 é um console híbrido, que pode ser usado no modo portátil ou conectado à TV pela base. Tem tela de 7,9 polegadas, 256 GB de armazenamento e controles Joy-Con 2 que se encaixam nas laterais.",
+  dualsense: "O DualSense é o controle sem fio oficial do PlayStation 5, com feedback háptico, gatilhos adaptáveis e microfone embutido. Conecta-se por Bluetooth e também funciona em computadores compatíveis.",
+
+  // Periféricos
+  g203: "O Logitech G203 Lightsync é um mouse gamer com sensor de até 8.000 DPI, 6 botões programáveis e iluminação RGB. É leve e indicado para jogos e uso no dia a dia.",
+  kumarak552: "O Redragon Kumara K552 é um teclado mecânico gamer compacto, sem o bloco numérico, com layout ABNT2 e iluminação RGB. A versão cadastrada usa switches marrons, que são táteis e mais silenciosos que os azuis.",
+  cloudstinger2: "O HyperX Cloud Stinger 2 é um headset gamer com drivers de 50 mm, microfone e conexão P3. É leve e compatível com computador, consoles e celulares.",
+  webcamc920: "A Logitech C920 é uma webcam Full HD 1080p com microfone embutido. É indicada para videochamadas, aulas on-line e transmissões ao vivo.",
+
+  // Climatização
+  arlg12000: "O LG Dual Inverter de 12.000 BTUs é um ar-condicionado split só frio, com tecnologia inverter para reduzir o consumo de energia e comando de voz. A versão cadastrada é 220V, e a instalação é cobrada à parte.",
+  arsamsung9000: "O Samsung Digital Inverter Ultra de 9.000 BTUs é um ar-condicionado split só frio, indicado para ambientes menores. A tecnologia inverter ajuda a economizar energia. A versão cadastrada é 220V, e a instalação é cobrada à parte.",
+  ventiladormondial: "O Mondial VTX-40-8P é um ventilador de mesa de 40 cm com 8 pás, 140 W e 3 velocidades. Confirme a voltagem do anúncio antes da compra.",
+  climatizadormondial: "O Climatizador Mondial CL-03 resfria, umidifica e ventila o ambiente usando água, com consumo de cerca de 80 W. É uma alternativa mais barata ao ar-condicionado, mas com efeito de resfriamento menor."
 };

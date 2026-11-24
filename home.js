@@ -20,7 +20,7 @@
       ${foto(p)}
       <div class="info">
         <b>${p.nome}</b>
-        <small>a partir de ${brl(menor(p))}</small>
+        <small>a partir de <span class="preco">${brl(menor(p))}</span></small>
         <small class="economia">Economize até ${brl(economia(p))}</small>
       </div>
     </a>`

@@ -20,7 +20,7 @@ function parecidos() {
   const cards = lista.map(x => `
     <a class="produto-card" href="produto.html?id=${x.id}">
       ${foto(x)}
-      <div class="info"><b>${x.nome}</b><small>a partir de ${brl(menor(x))}</small></div>
+      <div class="info"><b>${x.nome}</b><small>a partir de <span class="preco">${brl(menor(x))}</span></small></div>
     </a>`
   ).join("");
 
@@ -74,8 +74,7 @@ function desenhar() {
       ${foto(p)}
       <div class="produto-info">
         <h1>${p.nome}</h1>
-        <button type="button" class="btn-fav" id="fav"></button>
-        <p class="best-line">Menor preço <strong>${brl(min)}</strong>Economize até ${brl(max - min)} escolhendo a loja certa.</p>
+        <button type="button" class="btn-fav" id="fav"></button>        <p class="best-line">Menor preço <strong>${brl(min)}</strong>Economize até ${brl(max - min)} escolhendo a loja certa.</p>
         ${conferido}
         <div class="head">
           <h2>Preços por loja</h2>

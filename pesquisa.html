@@ -20,6 +20,15 @@
 
   <main class="pagina">
   <div id="chips" class="chips" role="group" aria-label="Categorias"></div>
+  <div class="ordenar">
+    <span id="total"></span>
+    <select id="ordem" aria-label="Ordenar produtos">
+      <option value="padrao">Mais relevante</option>
+      <option value="menor">Menor preço</option>
+      <option value="maior">Maior preço</option>
+      <option value="economia">Maior economia</option>
+    </select>
+  </div>
   <div id="produtos" class="grade-produtos" aria-live="polite"></div>
 </main>
 

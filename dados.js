@@ -72,8 +72,8 @@ const PRODUTOS = [
   },
   { id: "galaxya56", cat: "celulares", emoji: "📲",
     nome: "Samsung Galaxy A56 5G 256GB",
-    conferido: "15/11/2026 (KaBuM!: página aberta, preto, Pix, vendido por J&J; Magazine Luiza: cinza, Pix, dado de busca)",
-    precos: { magalu: 2609.10, kabum: 3199.99 },
+    conferido: "23/11/2026 (Magazine Luiza e Amazon: à vista, print do Buscapé enviado pelo usuário; KaBuM!: preto, Pix, vendido por J&J, conferido em 15/11)",
+    precos: { magalu: 2339.10, amazon: 2721.11, kabum: 3199.99 },
     links: {
       magalu: "https://www.magazineluiza.com.br/smartphone-samsung-galaxy-a56-256gb-5g-8gb-ram-cinza-67-cam-tripla-selfie-12mp/p/240097600/te/ga56/",
       kabum: "https://www.kabum.com.br/produto/729973/celular-samsung-galaxy-a56-5g-256gb-8gb-ram-camera-50mp-ip67-super-amoled-6-7-recursos-ai-preto"
@@ -305,10 +305,11 @@ const PRODUTOS = [
   },
   { id: "rtx5090", cat: "pecas", emoji: "🎮",
     nome: "Placa de Vídeo GeForce RTX 5090 32GB",
-    conferido: "15/11/2026 (só achei com preço na Pichau: ASUS TUF Gaming, Pix, dado de busca; KaBuM! aparece esgotada)",
-    precos: { pichau: 28000.00 },
+    conferido: "23/11/2026 (KaBuM!: página aberta, Gigabyte Gaming OC, Pix, vendido pela KaBuM!, link enviado pelo usuário; Pichau: ASUS TUF Gaming, Pix, dado de busca de 15/11)",
+    precos: { pichau: 28000.00, kabum: 50000.00 },
     links: {
-      pichau: "https://www.pichau.com.br/placa-de-video-asus-geforce-rtx-5090-tuf-gaming-32gb-gddr7-512-bit-tuf-rtx5090-32g-gaming-nac"
+      pichau: "https://www.pichau.com.br/placa-de-video-asus-geforce-rtx-5090-tuf-gaming-32gb-gddr7-512-bit-tuf-rtx5090-32g-gaming-nac",
+      kabum: "https://www.kabum.com.br/produto/713218/placa-de-video-rtx-5090-gaming-oc-32g-gigabyte-nvidia-geforce-32gb-gddr7-512bits-rgb-dlss-ray-tracing-gv-n5090gaming-oc-32gd"
     }
   },
   { id: "rtx4060", cat: "pecas", emoji: "🎮",
@@ -349,7 +350,7 @@ const PRODUTOS = [
     }
   },
   { id: "ramcorsair", cat: "pecas", emoji: "🧩",
-    nome: "Memória RAM Corsair Vengeance LPX 16GB 2400MHz DDR4",
+    nome: "Memória RAM Corsair Vengeance 16GB DDR4",
     conferido: "15/11/2026 (KaBuM!: página aberta, Pix; Pichau e Terabyte: Pix, dados de busca, preços variam entre anúncios)",
     precos: { pichau: 244.99, terabyte: 339.98, kabum: 978.99 },
     links: {
@@ -635,3 +636,4 @@ const menor = p => Math.min(...Object.values(p.precos));
 
 // Foto do produto. Se o arquivo não existir, aparece o emoji.
 const foto = p => `<div class="foto"><span class="foto-emoji" aria-hidden="true">${p.emoji}</span><img src="${p.img || "imagens/" + p.id + ".jpg"}" alt="${p.nome}" loading="lazy" onerror="this.remove()"></div>`;
+  

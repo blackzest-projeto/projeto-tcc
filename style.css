@@ -150,6 +150,11 @@ h2 { font-size: 1.3rem; font-weight: 600; margin: 0 0 14px; }
   display: flex; align-items: center; justify-content: center; min-height: 48px;
   background: #fff; color: #000; border-radius: 10px; font-weight: 600; text-decoration: none;
 }
+.link-github {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 10px;
+  color: var(--ink); text-decoration: none; font-weight: 600;
+}
+.link-github:hover { color: var(--laranja); }
 .rodape-msg {
   margin: 32px 0 24px; padding: 20px 0; text-align: center;
   border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
@@ -253,7 +258,7 @@ h2 { font-size: 1.3rem; font-weight: 600; margin: 0 0 14px; }
 .btn-fav:hover { border-color: var(--laranja); }
 .btn-fav[aria-pressed="true"] { background: var(--laranja); border-color: var(--laranja); color: #000; }
 .vazio a { color: var(--laranja); }
-
+
 
 /* Logo no cabeçalho */
 .logo { display: inline-flex; align-items: center; gap: 10px; }

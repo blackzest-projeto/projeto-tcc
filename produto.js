@@ -20,7 +20,7 @@ function parecidos() {
   const cards = lista.map(x => `
     <a class="produto-card" href="produto.html?id=${x.id}">
       ${foto(x)}
-      <div class="info"><b>${x.nome}</b><small>a partir de <span class="preco">${brl(menor(x))}</span></small></div>
+      <div class="info"><b>${x.nome}</b><small>a partir de <span class="preco">${brl(menor(x))}</span></small>${emLojas(x)}</div>
     </a>`
   ).join("");
 
@@ -34,6 +34,7 @@ function parecidos() {
 function desenhar() {
   const linhas = Object.entries(p.precos).map(([k, v]) => ({
     v,
+    id: k,
     loja: LOJAS[k],
     link: (p.links && p.links[k]) || LOJAS[k].busca(p.nome)
   }));
@@ -49,7 +50,10 @@ function desenhar() {
     const dif = l.v - min;
     const sub = melhor ? "Menor preço" : `${brl(dif)} a mais (${Math.round(dif / min * 100)}%)`;
     return `<li class="row${melhor ? " best" : ""}">
-      <div class="name">${l.loja.nome}<small>${sub}</small></div>
+      <div class="name">
+        <span class="loja-logo" aria-hidden="true">${l.loja.nome.charAt(0)}<img src="imagens/lojas/${l.id}.png" alt="" onerror="this.remove()"></span>
+        <span>${l.loja.nome}<small>${sub}</small></span>
+      </div>
       <div class="track" aria-hidden="true"><div class="fill" style="width:${(l.v / max * 100).toFixed(1)}%"></div></div>
       <div class="price">${brl(l.v)}</div>
       <a class="go" href="${l.link}" target="_blank" rel="noopener noreferrer">Ir à loja<span class="sr"> ${l.loja.nome}</span></a>

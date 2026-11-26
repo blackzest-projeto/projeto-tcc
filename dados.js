@@ -634,6 +634,12 @@ const PRODUTOS = [
 ];
 const menor = p => Math.min(...Object.values(p.precos));
 
+// Texto "em 3 lojas" mostrado nos cards
+const emLojas = p => {
+  const n = Object.keys(p.precos).length;
+  return `<small class="em-lojas">${n === 1 ? "em 1 loja" : `em ${n} lojas`}</small>`;
+};
+
 // Foto do produto. Se o arquivo não existir, aparece o emoji.
 const foto = p => `<div class="foto"><span class="foto-emoji" aria-hidden="true">${p.emoji}</span><img src="${p.img || "imagens/" + p.id + ".jpg"}" alt="${p.nome}" loading="lazy" onerror="this.remove()"></div>`;
   

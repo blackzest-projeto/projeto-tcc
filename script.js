@@ -43,7 +43,7 @@ function desenharProdutos() {
     return `
     <a class="produto-card" href="produto.html?id=${p.id}">
       ${foto(p)}
-      <div class="info"><b>${p.nome}</b><small>a partir de <span class="preco">${brl(menor(p))}</span></small>${eco}</div>
+      <div class="info"><b>${p.nome}</b><small>a partir de <span class="preco">${brl(menor(p))}</span></small>${emLojas(p)}${eco}</div>
     </a>`;
   }).join("");
 }

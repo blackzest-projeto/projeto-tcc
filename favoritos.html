@@ -80,7 +80,7 @@
         area.innerHTML = favoritos.map(p => `
           <a class="produto-card" href="produto.html?id=${p.id}">
             ${foto(p)}
-            <div class="info"><b>${p.nome}</b><small>a partir de <span class="preco">${brl(menor(p))}</span></small></div>
+            <div class="info"><b>${p.nome}</b><small>a partir de <span class="preco">${brl(menor(p))}</span></small>${emLojas(p)}</div>
           </a>`
         ).join("");
       }

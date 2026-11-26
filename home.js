@@ -21,6 +21,7 @@
       <div class="info">
         <b>${p.nome}</b>
         <small>a partir de <span class="preco">${brl(menor(p))}</span></small>
+        ${emLojas(p)}
         <small class="economia">Economize até ${brl(economia(p))}</small>
       </div>
     </a>`

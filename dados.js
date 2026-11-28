@@ -62,8 +62,8 @@ const PRODUTOS = [
   },
   { id: "edge60fusion", cat: "celulares", emoji: "📱",
     nome: "Smartphone Motorola Edge 60 Fusion 5G",
-    conferido: "15/11/2026 (dados de busca, sem confirmar estoque; cinza, 256GB; Carrefour: Pix)",
-    precos: { amazon: 1999.00, carrefour: 2069.10, magalu: 2199.00 },
+    conferido: "28/11/2026 (Amazon e Carrefour: preços informados pelo usuário; Magazine Luiza: dado de busca de 15/11; cinza, 256GB)",
+    precos: { amazon: 2199.00, carrefour: 2159.98, magalu: 2199.00 },
     links: {
       amazon: "https://www.amazon.com.br/Smartphone-Motorola-Edge-60-Fusion/dp/B0F1GVZ8H4",
       carrefour: "https://www.carrefour.com.br/produto/smartphone-motorola-edge-60-fusion-5g-256gb-8gb-ram-tela-67-camera-50mp-selfie-32mp-cinza-334202001",
@@ -87,6 +87,32 @@ const PRODUTOS = [
       amazon: "https://www.amazon.com.br/Smartphone-Motorola-60-256GB-dobr%C3%A1vel-externa/dp/B0F8LJSC9B",
       carrefour: "https://www.carrefour.com.br/smartphone-motorola-razr-60-5g-256gb-24gb-12gb-ram-12gb-ram-boost-tela-dobravel-6-9-poled-e-externa--mp951839768/p",
       casasbahia: "https://www.casasbahia.com.br/smartphone-motorola-razr-60-256gb-24gb-12gb-ram-12gb-ram-boost-tela-dobravel-69-quot-poled-e-externa-36-moto-ai-camera-ip48/p/1572113554"
+    }
+  },
+  { id: "iphone16e", cat: "celulares", emoji: "📱",
+    nome: "Apple iPhone 16e 128GB",
+    conferido: "28/11/2026 (KaBuM!: página aberta, Pix, vendido por Magalu; Amazon: Pix, vendido pela Amazon, dado de busca de 26/11)",
+    precos: { kabum: 3099.00, amazon: 2969.10 },
+    links: {
+      kabum: "https://www.kabum.com.br/produto/724768/iphone-16e-128gb-apple"
+    }
+  },
+  { id: "galaxya36", cat: "celulares", emoji: "📲",
+    nome: "Samsung Galaxy A36 5G 256GB",
+    conferido: "28/11/2026 (KaBuM!: página aberta, preto, Pix, vendido por SHOPNEXT; Amazon: branco, Pix, vendido pela Samsung, dado de busca)",
+    precos: { kabum: 2378.27, amazon: 2564.05 },
+    links: {
+      kabum: "https://www.kabum.com.br/produto/734579/smartphone-samsung-galaxy-a36-256gb-5g-preto-camera-tripla-50mp-ram-8gb-tela-6-7-",
+      amazon: "https://www.amazon.com.br/Celular-Samsung-Galaxy-C%C3%A2mera-Recursos/dp/B0DYVPC335"
+    }
+  },
+  { id: "redminote15", cat: "celulares", emoji: "📱",
+    nome: "Xiaomi Redmi Note 15 5G 256GB",
+    conferido: "28/11/2026 (KaBuM!: página aberta, Pix, vendido por Xiaomi Oficial; Mercado Livre: preto, preço informado pelo usuário)",
+    precos: { kabum: 3399.99, mercadolivre: 1998.00 },
+    links: {
+      kabum: "https://www.kabum.com.br/produto/997648/redmi-note-15-5g-256gb",
+      mercadolivre: "https://www.mercadolivre.com.br/redmi-note-15-5g-256gb-preto/p/MLB64298355"
     }
   },
 

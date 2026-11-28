@@ -1,6 +1,6 @@
 // Página inicial: mostra os produtos com a maior economia entre lojas.
 (() => {
-  const QUANTIDADE = 4;
+  const QUANTIDADE = 6;
 
   const economia = p => {
     const valores = Object.values(p.precos);

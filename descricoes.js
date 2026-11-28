@@ -7,6 +7,9 @@ const DESCRICOES = {
   edge60fusion: "O Motorola Edge 60 Fusion combina conexão 5G, tela de 6,7 polegadas, 256 GB de armazenamento e 8 GB de RAM. A câmera principal de 50 MP com sensor Sony e a selfie de 32 MP são acompanhadas pelos recursos de inteligência artificial moto ai.",
   galaxya56: "O Galaxy A56 é um intermediário com tela Super AMOLED de 6,7 polegadas, 8 GB de RAM e 256 GB de armazenamento. Oferece câmera tripla de até 50 MP, selfie de 12 MP, bateria de 5.000 mAh e certificação IP67 contra água e poeira.",
   razr60: "O Motorola Razr 60 é um celular dobrável com tela interna pOLED de 6,9 polegadas e tela externa de 3,6 polegadas. Tem 256 GB de armazenamento, 12 GB de RAM, câmera principal de 50 MP, selfie de 32 MP e certificação IP48.",
+  iphone16e: "O iPhone 16e é o modelo de entrada da linha 16 da Apple. Tem tela Super Retina XDR OLED de 6,1 polegadas, chip A18, câmera de 48 MP, 128 GB de armazenamento, Face ID e resistência à água e poeira IP68.",
+  galaxya36: "O Samsung Galaxy A36 5G é um intermediário com tela Super AMOLED de 6,7 polegadas e 120 Hz, processador Snapdragon 6 Gen 3, 8 GB de RAM e 256 GB de armazenamento. Conta com câmera tripla de 50 MP, selfie de 12 MP, recursos de IA e certificação IP67.",
+  redminote15: "O Xiaomi Redmi Note 15 5G é um intermediário com tela AMOLED de 6,77 polegadas, 8 GB de RAM e 256 GB de armazenamento. Tem câmera principal de 108 MP, conexão 5G e bateria de longa duração com carregamento rápido.",
 
   // Vídeo e áudio
   mibox: "O Xiaomi Mi Box S de 2ª geração transforma uma TV com entrada HDMI em uma smart TV com resolução 4K e sistema Google TV. O controle remoto com comando de voz facilita a busca por filmes, séries e aplicativos.",
